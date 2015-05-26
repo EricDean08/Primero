@@ -3,6 +3,9 @@
 <head>
 <meta charset="utf-8">
 <title>Aplic. Web de jQuery Mobile</title>
+<link rel="stylesheet" href="css/themes/prueba.css" />
+  <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+
 <link href="jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
 <script src="jquery-1.6.4.min.js" type="text/javascript"></script>
 <script src="jquery.mobile-1.0.min.js" type="text/javascript"></script>
@@ -14,13 +17,15 @@
 		<h1>CHIVAS FC</h1>
 	</div>
 	<div data-role="content">	
+    
 		<ul data-role="listview">
-			<li><a href="#page2">Club Deportivo Guadalajara</a></li>
-            <li><a href="#page3">Escudo</a></li>
-			<li><a href="#page4">Estadio</a></li>
-		</ul>		
+			<li><a href="#page2" data-transition="fade">Guadalajara FC</a></li>
+            <li><a href="#page3" data-transition="flip">Escudo</a></li>
+			<li><a href="#page4" data-transition="pop">Estadio</a></li>
+            <li><a href="#page5" data-transition="fade">AYUDA</a></li>
+		</ul>		 
 	</div>
-	<div data-role="footer">
+	<div data-role="footer" data-position="fixed">
 		<h4>superchivas</h4>
 	</div>
 </div>
@@ -29,10 +34,15 @@
 	<div data-role="header">
 		<h1>Club Deportivo Guadalajara</h1>
 	</div>
-	<div data-role="content">	
-		El Club Deportivo Guadalajara,2 mejor conocido como Guadalajara o Chivas Rayadas del Guadalajara es un club de fútbol profesional con sede en Guadalajara, Jalisco, México. Fue fundado oficialmente el 8 de mayo de 1906 por el comerciante y agente de ventas belga, Edgar Everaert, bajo el nombre de «Unión Foot Ball Club»,3 mismo año en el que comenzó su actividad futbolística.		
-	</div>
-	<div data-role="footer">
+	<div data-role="content" style="font: 'Comic Sans MS', cursive">
+    <img src="../../../Pictures/chivas.png" width="200" height="100"> 
+    <P>El Club Deportivo Guadalajara,mejor conocido como Guadalajara o Chivas Rayadas del Guadalajara es un club de fútbol profesional con sede en Guadalajara, Jalisco, México. Fue fundado oficialmente el 8 de mayo de 1906 por el comerciante y agente de ventas belga, Edgar Everaert, bajo el nombre de «Unión Foot Ball Club»,3 mismo año en el que comenzó su actividad futbolística.</P>
+    <a href="#page"> REGRESO </a> 
+    <a href="#page5" class=" ui-btn">AYUDA </a>
+    <button class=" ui-btn"> BOTON </button>
+      </div>
+    
+	<div data-role="footer" data-position="fixed">
 		<h4>superchivas</h4>
 	</div>
 </div>
@@ -41,10 +51,11 @@
 	<div data-role="header">
 		<h1>Escudo</h1>
 	</div>
-	<div data-role="content">	
-		El escudo actual del Club Deportivo Guadalajara se creó en la temporada 1923-1924 teniendo como base el escudo de armas de la Ciudad de Guadalajara y tiene un gran significado por sí mismo: —Las armas simbolizan el estandarte del caudillo invicto en los combates. La lanza simboliza la fortaleza con prudencia. El adorno se otorgaba como una insignia de valentía extrema. La perseverancia estaba ilustrada a través del pino. Mientras que el león denotaba un espíritu de gran guerrero, adornado de cualidades como vigilancia, dominio y bravura		
-	</div>
-	<div data-role="footer">
+	<div data-role="content" style="text-align:end" style="font-size: 36px">	
+		<img src="../../../Pictures/ESCUDO.png" width="200" height="200">
+		<P>El escudo actual del Club Deportivo Guadalajara se creó en la temporada 1923-1924 teniendo como base el escudo de armas de la Ciudad de Guadalajara y tiene un gran significado por sí mismo: —Las armas simbolizan el estandarte del caudillo invicto en los combates. La lanza simboliza la fortaleza con prudencia. El adorno se otorgaba como una insignia de valentía extrema. La perseverancia estaba ilustrada a través del pino. Mientras que el león denotaba un espíritu de gran guerrero, adornado de cualidades como vigilancia, dominio y bravura </P> <a href="#page"> REGRESO </a>		
+  </div>
+	<div data-role="footer" data-position="fixed">
 		<h4>superchivas</h4>
 	</div>
 </div>
@@ -53,11 +64,24 @@
 	<div data-role="header">
 		<h1>Estadio</h1>
 	</div>
-	<div data-role="content">	
-		En los primeros años después su fundación como Club Unión (1906), el equipo jugaba en diversos campos pues no contaba con un estadio propio. Cualquier lugar con espacio suficiente era tomado para realizar esos primeros juegos contra el Atlético Occidental. Los baldíos de la «colonia Moderna» serían el centro deportivo donde se jugaron gran parte de los primeros encuentros de fútbol de Jalisco. En lo que actualmente son las calles Vallarta, Pedro Moreno y López Cotilla, el Guadalajara tuvo sus primeros campos, al realizar sus juegos en un baldío que fue donado por Sabino Orozco		
+	<div data-role="content" style="text-align:right">	
+		<img src="../../../Pictures/ESTADIO.png" width="275" height="183">
+		<P>En los primeros años después su fundación como Club Unión (1906), el equipo jugaba en diversos campos pues no contaba con un estadio propio. Cualquier lugar con espacio suficiente era tomado para realizar esos primeros juegos contra el Atlético Occidental. Los baldíos de la «colonia Moderna» serían el centro deportivo donde se jugaron gran parte de los primeros encuentros de fútbol de Jalisco. En lo que actualmente son las calles Vallarta, Pedro Moreno y López Cotilla, el Guadalajara tuvo sus primeros campos, al realizar sus juegos en un baldío que fue donado por Sabino Orozco</P> <a href="#page"> REGRESO </a>		
 	</div>
-	<div data-role="footer">
+	<div data-role="footer" data-position="fixed">
 		<h4>superchivas</h4>
+	</div>
+    
+    
+    <div data-role="page" data-dialog="true" id="page5">
+	<div data-role="header">
+		<h1> AYUDA</h1>
+	</div>
+	<div data-role="content" 
+		<P> EN ESTE CONTENIDO SE MUESTRA LA AYUDA</P>       		
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<h5>FIN DEL COMENTARIO</h5>
 	</div>
 </div>
 
